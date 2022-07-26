@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Stanislav Prokofjev](https://up.htmlacademy.ru/adaptive/26/user/2066843).
-* Наставник: `Неизвестно`.
+* Наставник: [Герман Карев](https://htmlacademy.ru/profile/id269691).
 
 ---
 
