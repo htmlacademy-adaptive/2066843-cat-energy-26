@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+
+    <header class="main-header">
+      <a class="main-title__logo" href="index.html">
+        <img class="main-header__logo-image" src="../source/img/logo/cat-energy-logo.svg" alt="Логотип магазина 'CAT ENERGY'">
+      </a>
+
+      <nav class="main-navigation navigation">
+        <button class="navigation__burger" type="button">
+          <span class="vissually-hidden">Open menu</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--current">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-form">
+
+      <section class="main-form__customer customer">
+        <h1 class="customer__title">Подбор программы</h1>
+        <h2 class="customer__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+        <form class="customer-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="customer-form__group">
+          <ul class="control-container customer-form__list customer-form__input">
+            <li class="customer-form__item">
+              <label for="customer__name">Имя:*</label>
+              <input type="text" id="customer__name" placeholder="Барсик">
+            </li>
+            <li class="customer-form__item">
+              <label for="customer__weight">Вес (кг):*</label>
+              <input type="number" id="customer__weight" placeholder="7">
+            </li>
+            <li class="customer-form__item">
+              <label for="customer__age">Возраст (лет):</label>
+              <input type="number" id="customer__age" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="customer-form__group">
+          <ul class="control-container customer-form__list customer-form__radio">
+            <li class="customer-form__item">
+              <input type="radio" id="lose-weight" name="type" value="Похудение"  checked>
+              <label for="lose-weight">Похудение</label>
+            </li>
+            <li class="customer-form__item">
+              <input type="radio" id="weight_gain" name="type" value="Набор массы">
+              <label for="weight-gain">Набор массы</label>
+            </li>
+            <li class="customer-form__item">
+              <input type="radio" id="dont-know" name="type" value="Не знаю (нужен ваш совет)">
+              <label for="dont-know">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="customer-form__group">
+          <legend class="customer-form__title">Контактные данные (владельца кота)</legend>
+          <ul class="control-container customer-form__list customer-form__input">
+            <li class="customer-form__item">
+              <label for="customer__email">e-mail:*</label>
+              <input type="text" id="customer__email" placeholder="KUKLACHEV@GMAIL.COM">
+            </li>
+            <li class="customer-form__item">
+              <lable for="customer__phone">Телефон:*</lable>
+              <input type="text" id="customer__phone" placeholder="8 (960) 900-60-90">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="customer-form__group">
+          <legend class="customer-form__title">Коментарий</legend>
+          <textarea rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="customer-form__group">
+          <legend class="customer__form__text">Допольнительно</legend>
+          <ul class="control-container customer-form__list customer-form__input">
+            <li class="customer-form__item">
+              <input type="checkbox" id="sugar" name="additional" value="сахарозаменитель" checked>
+              <label for="sugar">сахарозаменитель</label></li>
+            <li class="customer-form__item">
+              <input type="checkbox" id="water" name="additional" value="питьевая вода">
+              <label for="water">питьевая вода</label></li>
+            <li class="customer-form__item">
+              <input type="checkbox" id="milk" name="additional" value="молоко">
+              <label for="milk">молоко</label></li>
+            <li class="customer-form__item">
+              <input type="checkbox" id="vitamin" name="additional" value="витамины">
+              <label for="vitamin">витамины</label></li>
+          </ul>
+        </fieldset>
+        <button class="customer-form__button" type="submit">Отправить заявку</button>
+        <p class="customer-form__text">*--Обязательные поля</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+
+        <div class="footer__address address">
+          <div class="address__block1">
+            <h1 class="address__title">Приглашаем к сотрудничеству дилеров!</h1>
+            <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
+          <div class="address__map">
+            <img class="address__map__img" src="../source/img/cat-energy-map.svg" height="362" width="320" alt="местонахождение на карте 'CAT ENERGY'">
+          </div>
+        </div>
+
+        <div class="main-footer__logo">
+          <img class="main-footer__logo__image" src="../source/img/logo/footer-logo.svg" height="24px" width="128" alt="Логотип магазина 'CAT ENERGY'">
+        </div>
+
+        <div class="page-footer__social social">
+         <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#"></a>
+          </li>
+         </ul>
+        </div>
+
+        <div class="main-footer__link">
+         <a class="main-footer__link__html" href="#" >
+          <img src="../source/img/logo/html-logo.svg" alt="логотип HTML Academy">
+         </a>
+        </div>
+
+      </div>
+    </footer>
+
+
+  </body>
+</html>
