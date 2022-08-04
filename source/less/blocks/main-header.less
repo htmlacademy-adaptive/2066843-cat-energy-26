@@ -1,3 +1,22 @@
+.main-header__wrapper {
+  margin: auto;
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo__mobile {
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.logo__mobile__link2 {
+  margin-top: 13px;
+}
+
 .logo__tablet {
   display: none;
 }
@@ -9,3 +28,40 @@
 .navigation__list {
   display: none;
 }
+
+.navigation__container {
+  width: 24px;
+  height: 18px;
+  position: relative;
+  margin-top: 14px;
+}
+
+.navigation__burger {
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  padding: 0;
+  border: none;
+
+}
+
+.navigation__burger::after {
+  content: "";
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+  position: absolute;
+  top: 100%;
+}
+
+.navigation__burger::before {
+  content: "";
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+}
+
