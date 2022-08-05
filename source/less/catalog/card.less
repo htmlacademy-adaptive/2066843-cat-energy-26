@@ -1,0 +1,144 @@
+.catalog__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.card__link1--small {
+  margin: 33px 36px 25px 56px;
+}
+
+.card__link1--big {
+  margin: 30px 28px 13px 48px;
+}
+
+.card__wrapper {
+  display: flex;
+}
+
+.card__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__link2 {
+  text-decoration: none;
+}
+
+.card__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+  width: 78px;
+  margin: 0;
+  margin-top: 19px;
+}
+
+.card__list {
+  display: grid;
+  grid-template-columns: max-content auto;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  margin: 0;
+  margin-top: 14px;
+  margin-right: 20px;
+}
+
+.card__term {
+  grid-column-start: 1;
+}
+
+.card__description {
+  grid-column-start: 2;
+  margin-left: auto;
+}
+
+.card__button {
+  margin-bottom: 25px;
+}
+
+.catalog__card__more {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ebebeb;
+  padding: 25px 20px;
+  position: relative;
+}
+
+.more__button--cross {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.more__button--cross::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: rgba(211, 211, 211, 1);
+  border: none;
+  transform: rotate(90deg);
+  left: 0;
+}
+
+.more__button--cross::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: rgba(211, 211, 211, 1);
+  border: none;
+  left: 0;
+}
+
+.more__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+  margin-top: 53px;
+}
+
+.more__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.more__button {
+  margin: auto;
+  margin-top: 21px;
+}
