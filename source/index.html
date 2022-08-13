@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -9,22 +10,22 @@
 
     <header class="main-header">
       <div class="main-header__wrapper">
-        <div class="logo__mobile">
-          <a class="logo__mobile__link1" href="index.html">
-            <img class="logo__mobile__image1" src="../source/img/logo/logo-mobile.svg" alt="Логотип магазина 'CAT ENERGY'">
+        <div class="logo--mobile">
+          <a class="logo__link1--mobile" href="index.html">
+            <img class="logo__image1--mobile" src="../source/img/logo/logo-mobile.svg" alt="Логотип магазина 'CAT ENERGY'">
           </a>
-          <a class="logo__mobile__link2" href="index.html">
-            <img class="logo__mobile__image2" src="../source/img/logo/logo-mobile2.svg" alt="Логотип магазина 'CAT ENERGY'">
-          </a>
-        </div>
-        <div class="logo__tablet">
-          <a class="logo__tablet__link" href="index.html">
-            <img class="logo__tablet__image" src="../source/img/logo/logo-tablet.svg" alt="Логотип магазина 'CAT ENERGY'">
+          <a class="logo__link2--mobile" href="index.html">
+            <img class="logo__image2--mobile" src="../source/img/logo/logo-mobile2.svg" alt="Логотип магазина 'CAT ENERGY'">
           </a>
         </div>
-        <div class="logo__desktop">
-          <a class="logo__desktop__link" href="index.html">
-            <img class="logo__desktop__image" src="../source/img/logo/logo-desktop.svg" alt="Логотип магазина 'CAT ENERGY'">
+        <div class="logo--tablet">
+          <a class="logo__link--tablet" href="index.html">
+            <img class="logo__image--tablet" src="../source/img/logo/logo-tablet.svg" alt="Логотип магазина 'CAT ENERGY'">
+          </a>
+        </div>
+        <div class="logo--desktop">
+          <a class="logo__link--desktop" href="index.html">
+            <img class="logo__image--desktop" src="../source/img/logo/logo-desktop.svg" alt="Логотип магазина 'CAT ENERGY'">
           </a>
         </div>
 
@@ -36,7 +37,7 @@
           </div>
           <ul class="navigation__list">
             <li class="navigation__item navigation__item--current">
-              <a class="navigation__link" href="index.html">Главная</a>
+              <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Каталог продукции</a>
@@ -47,11 +48,7 @@
           </ul>
         </nav>
       </div>
-    </header>
 
-    <main class="main-index">
-
-      <h1 class="visually-hidden">Главная страница</h1>
       <section class="intro">
         <h2 class="visually-hidden">Выбор программы</h2>
         <div class="intro__wrapper">
@@ -61,6 +58,11 @@
           <a class="intro__link button" href="#">подобрать программу</a>
         </div>
       </section>
+    </header>
+
+    <main class="main-index">
+
+      <h1 class="visually-hidden">Главная страница</h1>
 
       <section class="category">
         <h3 class="visually-hidden">Выбор категории</h3>
@@ -82,10 +84,18 @@
         <div class="info__wrapper">
           <h2 class="info__title">Как это работает</h2>
           <ul class="info__list">
-            <li class="info__item info__item--function1">Функциональное питание содержит только полезные питательные вещества.</li>
-            <li class="info__item info__item--function2">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-            <li class="info__item info__item--function3">Замените один-два приема обычной еды на наше функциональное питание.</li>
-            <li class="info__item info__item--function4">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+            <li class="info__item info__item--function1">
+              <p class="info__item__text">Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+            <li class="info__item info__item--function2">
+              <p class="info__item__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            </li>
+            <li class="info__item info__item--function3">
+              <p class="info__item__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            </li>
+            <li class="info__item info__item--function4">
+              <p class="info__item__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            </li>
           </ul>
         </div>
       </section>
@@ -93,7 +103,7 @@
       <section class="example">
         <h3 class="visually-hidden">Пример</h3>
         <div class="example__wrapper">
-          <h4 class="example__title">Живой пример</h4>
+          <p class="example__title">Живой пример</p>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
           <div class="example__block">
             <div class="example__cell">
@@ -105,7 +115,7 @@
               <label class="example__cell__label">затрачено времени</label>
             </div>
           </div>
-          <h4 class="example__title2">Затраты на питание: 15 000 руб.</h4>
+          <p class="example__title2">Затраты на питание: 15 000 руб.</p>
           <div class="example__content">
             <img class="example__image" src="../source/img/cat-fat.svg" height="232" weight="280" alt="Кот до диеты">
             <div class="example__range range">
@@ -136,39 +146,41 @@
           </div>
         </div>
 
-        <div class="main-footer__logo">
-          <a class="main-footer__logo__link" href="index.html">
-            <img class="main-footer__logo__image" src="../source/img/logo/footer-logo.svg" height="24" width="128" alt="Логотип магазина 'CAT ENERGY'">
-          </a>
-        </div>
+        <div class="main-footer__container">
+          <div class="main-footer__logo">
+            <a class="main-footer__logo__link" href="index.html">
+              <img class="main-footer__logo__image" src="../source/img/logo/footer-logo.svg" height="24" width="128" alt="Логотип магазина 'CAT ENERGY'">
+            </a>
+          </div>
 
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__link__logo" src="../source/img/social/vk.svg" height="17" width="27" alt="Логотив VK" >
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__link__logo" src="../source/img/social/youtube.svg" height="19" width="24" alt="Логотип youtube">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__link__logo" src="../source/img/social/telegram.svg" height="17" width="20" alt="Логотип telegram">
-              </a>
-            </li>
-          </ul>
-        </div>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__link__logo" src="../source/img/social/vk.svg" height="17" width="27" alt="Логотив VK" >
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__link__logo" src="../source/img/social/youtube.svg" height="19" width="24" alt="Логотип youtube">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__link__logo" src="../source/img/social/telegram.svg" height="17" width="20" alt="Логотип telegram">
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="main-footer__link">
-          <a class="main-footer__link__html1" href="#" >
-            <img class="main-footer__link__image1" src="../source/img/logo/HTML-footer-logo1.svg" alt="логотип HTML Academy">
-          </a>
-          <a class="main-footer__link__html2" href="#" >
-            <img class="main-footer__link__image2" src="../source/img/logo/HTML-footer-logo2.svg" alt="логотип HTML Academy">
-          </a>
+          <div class="main-footer__link">
+            <a class="main-footer__link__html1" href="#" >
+              <img class="main-footer__link__image1" src="../source/img/logo/HTML-footer-logo1.svg" alt="логотип HTML Academy">
+            </a>
+            <a class="main-footer__link__html2" href="#" >
+              <img class="main-footer__link__image2" src="../source/img/logo/HTML-footer-logo2.svg" alt="логотип HTML Academy">
+            </a>
+          </div>
         </div>
 
       </div>

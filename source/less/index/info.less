@@ -18,15 +18,133 @@
 }
 
 .info__item {
+  margin-bottom: 26px;
+}
+
+.info__item:last-child {
+  margin-bottom: 0;
+}
+
+.info__item__text {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  margin-bottom: 26px;
+  margin: 0;
 }
 
-.info__item:last-child {
-  margin-bottom: 0;
+@media (min-width: @tablet-width) {
+  .info__wrapper {
+    margin-top: 45px;
+    padding: 0 30px 47px 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .info__title {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    color: #000000;
+  }
+
+  .info__list {
+    counter-set: info-item-counter;
+    display: grid;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: auto;
+    column-gap: 154px;
+    row-gap: 37px;
+  }
+
+  .info__item {
+    height: 280px;
+    margin: 0;
+    position: relative;
+  }
+
+  .info__item::after {
+    counter-increment: info-item-counter;
+    content: counter(info-item-counter);
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: hsl(0, 0%, 95%);
+    position: absolute;
+    right: 0;
+    bottom: 13px;
+    z-index: -1;
+  }
+
+  .info__item__text {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+    margin-top: 151px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info__wrapper {
+    margin: 71px 110px 0 110px;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .info__title {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    color: #000000;
+  }
+
+  .info__list {
+    counter-set: info-item-counter;
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    grid-template-rows: auto;
+    column-gap: 95px;
+    row-gap: 37px;
+  }
+
+  .info__item {
+    height: 280px;
+    margin: 0;
+    position: relative;
+  }
+
+  .info__item::after {
+    counter-increment: info-item-counter;
+    content: counter(info-item-counter);
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: hsl(0, 0%, 95%);
+    position: absolute;
+    right: 0;
+    bottom: 13px;
+    z-index: -1;
+  }
+
+  .info__item__text {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+    margin-top: 151px;
+  }
 }
