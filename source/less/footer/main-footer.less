@@ -203,12 +203,16 @@
   .main-footer__container::after {
     content: "";
     width: 100vw;
-    height: 1066px;
+    height: 204px;
+    background-color: #f2f2f2;
     position: absolute;
     z-index: -1;
     left: calc(-50vw + 50%);
-    background-color: #f2f2f2;
-    top: -862px;
+    top: 0;
+  }
+
+  .main-footer__wrapper--catalog::after {
+    content: none;
   }
 
   .main-footer__logo {
