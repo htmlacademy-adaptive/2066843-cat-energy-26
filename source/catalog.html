@@ -7,7 +7,7 @@
   </head>
   <body class="page__body">
 
-    <header class="main-header">
+    <header class="main-header main-header--catalog">
       <div class="main-header__wrapper">
         <div class="logo--mobile">
           <a class="logo__link1--mobile" href="index.html">
@@ -36,17 +36,18 @@
           </div>
           <ul class="navigation__list">
             <li class="navigation__item navigation__item--current">
-              <a class="navigation__link" href="index.html">Главная</a>
+              <a class="navigation__link navigation__link--current navigation__link--catalog" href="index.html">Главная</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+              <a class="navigation__link navigation__link--catalog" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Подбор программы</a>
+              <a class="navigation__link navigation__link--catalog" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
       </div>
+
     </header>
 
     <main class="main-catalog catalog">
@@ -61,7 +62,7 @@
           <li class="catalog__item card">
             <div class="card__wrapper">
               <a class="card__link1--small" href="#">
-                <img class="card__image" src="../source/img/catalog/catalog-item-1.svg" height="86" width="68" alt="кошачий корм с курицей 500г">
+                <img class="card__image card__image--small" src="../source/img/catalog/catalog-item-1.svg" height="86" width="68" alt="кошачий корм с курицей 500г">
               </a>
               <div class="card__container">
                 <a class="card__link2" href="#">
@@ -82,7 +83,7 @@
           <li class="catalog__item card">
             <div class="card__wrapper">
               <a class="card__link1--big" href="#">
-                <img class="card__image" src="../source/img/catalog/catalog-item-2.svg" height="101" width="84" alt="кошачий корм с курицей 1000г">
+                <img class="card__image card__image--big" src="../source/img/catalog/catalog-item-2.svg" height="101" width="84" alt="кошачий корм с курицей 1000г">
               </a>
               <div class="card__container">
                 <a class="card__link2" href="#">
@@ -103,7 +104,7 @@
           <li class="catalog__item card">
             <div class="card__wrapper">
               <a class="card__link1--small" href="#">
-                <img class="card__image" src="../source/img/catalog/catalog-item-3.svg" height="78" width="68" alt="кошачий корм с рыбой 500г">
+                <img class="card__image card__image--small" src="../source/img/catalog/catalog-item-3.svg" height="78" width="68" alt="кошачий корм с рыбой 500г">
               </a>
               <div class="card__container">
                 <a class="card__link2" href="#">
@@ -124,7 +125,7 @@
           <li class="catalog__item card">
             <div class="card__wrapper">
               <a class="card__link1--big" href="#">
-                <img class="card__image" src="../source/img/catalog/catalog-item-4.svg" height="101" width="84" alt="кошачий корм с рыбой 1000г">
+                <img class="card__image card__image--big" src="../source/img/catalog/catalog-item-4.svg" height="101" width="84" alt="кошачий корм с рыбой 1000г">
               </a>
               <div class="card__container">
                 <a class="card__link2" href="#">
@@ -145,7 +146,7 @@
           <li class="catalog__item card">
             <div class="card__wrapper">
               <a class="card__link1--small" href="#">
-                <img class="card__image" src="../source/img/catalog/catalog-item-5.svg" height="78" width="68" alt="кошачий корм со вкусом гречки 500г">
+                <img class="card__image card__image--small" src="../source/img/catalog/catalog-item-5.svg" height="78" width="68" alt="кошачий корм со вкусом гречки 500г">
               </a>
               <div class="card__container">
                 <a class="card__link2" href="#">
@@ -166,7 +167,7 @@
           <li class="catalog__item card">
             <div class="card__wrapper">
               <a class="card__link1--big" href="#">
-                <img class="card__image" src="../source/img/catalog/catalog-item-6.svg" height="101" width="84" alt="кошачий корм со вкусом гречки 1000г">
+                <img class="card__image card__image--big" src="../source/img/catalog/catalog-item-6.svg" height="101" width="84" alt="кошачий корм со вкусом гречки 1000г">
               </a>
               <div class="card__container">
                 <a class="card__link2" href="#">
@@ -187,7 +188,7 @@
           <li class="catalog__item card">
             <div class="card__wrapper">
               <a class="card__link1--small" href="#">
-                <img class="card__image" src="../source/img/catalog/catalog-item-7.svg" height="84" width="72" alt="кошачий корм со вкусом риса 500г">
+                <img class="card__image card__image--small" src="../source/img/catalog/catalog-item-7.svg" height="84" width="72" alt="кошачий корм со вкусом риса 500г">
               </a>
               <div class="card__container">
                 <a class="card__link2" href="#">
@@ -205,13 +206,15 @@
             </div>
             <a class="card__button button" href="#">Заказать</a>
           </li>
+          <li class="catalog__item card">
+            <div class="catalog__card__more more">
+              <button class="more__button--cross" type="button"></button>
+              <h4 class="more__title">Показать еще 100500 товаров</h4>
+              <p class="more__text">На самом деле вкусов гораздо больше!</p>
+              <a class="more__button button--secondary" href="#">Показать все</a>
+            </div>
+          </li>
         </ul>
-        <div class="catalog__card__more more">
-          <button class="more__button--cross" type="button"></button>
-          <h4 class="more__title">Показать еще 100500 товаров</h4>
-          <p class="more__text">На самом деле вкусов гораздо больше!</p>
-          <a class="more__button button--secondary" href="#">Показать все</a>
-        </div>
       </section>
 
       <section class="catalog__card2 card2">
@@ -261,7 +264,7 @@
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
+      <div class="main-footer__wrapper main-footer__wrapper--catalog">
 
         <div class="main-footer__address address">
           <div class="address__block1">
@@ -273,39 +276,41 @@
           </div>
         </div>
 
-        <div class="main-footer__logo">
-          <a class="main-footer__logo__link" href="index.html">
-            <img class="main-footer__logo__image" src="../source/img/logo/footer-logo.svg" height="24" width="128" alt="Логотип магазина 'CAT ENERGY'">
-          </a>
-        </div>
+        <div class="main-footer__container">
+          <div class="main-footer__logo">
+            <a class="main-footer__logo__link" href="index.html">
+              <img class="main-footer__logo__image" src="../source/img/logo/footer-logo.svg" height="24" width="128" alt="Логотип магазина 'CAT ENERGY'">
+            </a>
+          </div>
 
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__link__logo" src="../source/img/social/vk.svg" height="17" width="27" alt="Логотив VK" >
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__link__logo" src="../source/img/social/youtube.svg" height="19" width="24" alt="Логотип youtube">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__link__logo" src="../source/img/social/telegram.svg" height="17" width="20" alt="Логотип telegram">
-              </a>
-            </li>
-          </ul>
-        </div>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__link__logo" src="../source/img/social/vk.svg" height="17" width="27" alt="Логотив VK" >
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__link__logo" src="../source/img/social/youtube.svg" height="19" width="24" alt="Логотип youtube">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__link__logo" src="../source/img/social/telegram.svg" height="17" width="20" alt="Логотип telegram">
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="main-footer__link">
-          <a class="main-footer__link__html1" href="#" >
-            <img class="main-footer__link__image1" src="../source/img/logo/HTML-footer-logo1.svg" alt="логотип HTML Academy">
-          </a>
-          <a class="main-footer__link__html2" href="#" >
-            <img class="main-footer__link__image2" src="../source/img/logo/HTML-footer-logo2.svg" alt="логотип HTML Academy">
-          </a>
+          <div class="main-footer__link">
+            <a class="main-footer__link__html1" href="#" >
+              <img class="main-footer__link__image1" src="../source/img/logo/HTML-footer-logo1.svg" alt="логотип HTML Academy">
+            </a>
+            <a class="main-footer__link__html2" href="#" >
+              <img class="main-footer__link__image2" src="../source/img/logo/HTML-footer-logo2.svg" alt="логотип HTML Academy">
+            </a>
+          </div>
         </div>
 
       </div>
@@ -314,3 +319,4 @@
 
   </body>
 </html>
+

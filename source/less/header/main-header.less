@@ -1,11 +1,11 @@
 .main-header {
   width: 320px;
-  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .main-header__wrapper {
+  margin-top: 10px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -155,10 +155,14 @@
   margin-right: auto;
 }
 
+.intro-catalog {
+  display: none;
+  position: absolute;
+}
+
 @media (min-width: @tablet-width) {
   .main-header {
-    margin: 0;
-    padding: 24px 30px 0 30px;
+    min-width: 706px;
   }
 
   .logo--mobile {
@@ -174,12 +178,14 @@
   }
 
   .main-header__wrapper {
+    margin: 24px 30px 0 30px;
     display: flex;
     justify-content: space-between;
   }
 
   .navigation {
-    margin-left: 93px;
+    margin-left: auto;
+    margin-right: 0;
   }
 
   .navigation__container {
@@ -319,6 +325,10 @@
     white-space: nowrap;
   }
 
+  .navigation__link--catalog {
+    color: #000000;
+  }
+
   .intro {
     position: relative;
     margin-top: 111px;
@@ -352,3 +362,4 @@
     margin: 0;
   }
 }
+

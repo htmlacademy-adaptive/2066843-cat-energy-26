@@ -139,6 +139,22 @@
     height: 34px;
     width: 163px;
   }
+
+  .main-footer__wrapper--catalog {
+    margin-top: 78px;
+    position: relative;
+  }
+
+  .main-footer__wrapper--catalog::after {
+    content: "";
+    width: 100vw;
+    position: absolute;
+    left: calc(-50vw + 50%);
+    height: 805px;
+    background-color: #f2f2f2;
+    z-index: -1;
+    top: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -174,14 +190,25 @@
   }
 
   .main-footer__container {
+    box-sizing: border-box;
     padding: 63px 110px;
-    height: 34px;
-    width: 100%;
-    background-color: #f2f2f2;
+    width: 1440px;
     display: flex;
     justify-content: space-between;
     margin: 0;
     align-items: baseline;
+    position: relative;
+  }
+
+  .main-footer__container::after {
+    content: "";
+    width: 100vw;
+    height: 1066px;
+    position: absolute;
+    z-index: -1;
+    left: calc(-50vw + 50%);
+    background-color: #f2f2f2;
+    top: -862px;
   }
 
   .main-footer__logo {
