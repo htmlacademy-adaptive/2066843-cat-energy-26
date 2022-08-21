@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
 
-    <header class="main-header main-header--catalog">
+    <header class="main-header">
       <div class="main-header__wrapper">
         <div class="logo--mobile">
           <a class="logo__link1--mobile" href="index.html">
@@ -28,23 +29,21 @@
           </a>
         </div>
 
-
-
-        <nav class="main-navigation navigation">
-          <div class="navigation__container">
-            <a class="navigation__burger" type="button"></a>
-          </div>
-          <ul class="navigation__list">
-            <li class="navigation__item navigation__item--current">
-              <a class="navigation__link navigation__link--current navigation__link--catalog" href="index.html">Главная</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--catalog" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--catalog" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs navigation">
+          <button class="navigation__burger" type="button"></button>
+          <div class="main-navigation__wrapper">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="index.html">Главная</a>
+                </li>
+                <li class="navigation__item navigation__item--current">
+                  <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="form.html">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
         </nav>
       </div>
 
@@ -321,6 +320,6 @@
       </div>
     </footer>
 
-
+  <script src="../source/js/script.js"></script>
   </body>
 </html>

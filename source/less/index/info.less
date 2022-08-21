@@ -19,6 +19,47 @@
 
 .info__item {
   margin-bottom: 26px;
+  padding-left: 80px;
+  position: relative;
+}
+
+.info__item::after {
+  width: 60px;
+  height: 60px;
+  content: "";
+  background-color: hsl(97, 53%, 47%);
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.info__item--function1::after {
+  content: "";
+  background-image: url("../img/icon/vector-flower.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info__item--function2::after {
+  content: "";
+  background-image: url("../img/icon/vector-wash.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info__item--function3::after {
+  content: "";
+  background-image: url("../img/icon/vector-eat.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info__item--function4::after {
+  content: "";
+  background-image: url("../img/icon/vector-clock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .info__item:last-child {
@@ -64,9 +105,15 @@
     height: 280px;
     margin: 0;
     position: relative;
+    padding: 0;
   }
 
   .info__item::after {
+    width: 80px;
+    height: 80px;
+  }
+
+  .info__item::before {
     counter-increment: info-item-counter;
     content: counter(info-item-counter);
     font-family: "Oswald", sans-serif;
@@ -123,7 +170,7 @@
     position: relative;
   }
 
-  .info__item::after {
+  .info__item::before {
     counter-increment: info-item-counter;
     content: counter(info-item-counter);
     font-family: "Oswald", sans-serif;
