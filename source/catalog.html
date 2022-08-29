@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -10,24 +11,14 @@
 
     <header class="main-header">
       <div class="main-header__wrapper">
-        <div class="logo--mobile">
-          <a class="logo__link1--mobile" href="index.html">
-            <img class="logo__image1--mobile" src="../source/img/logo/logo-mobile.svg" alt="Логотип магазина 'CAT ENERGY'">
+          <a class="logo__link" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" width="202" height="59" srcset="../source/img/logo/logo-desktop.svg">
+              <source media="(min-width: 768px)" width="174" height="52" srcset="../source/img/logo/logo-tablet.svg">
+              <img class="logo__image" src="../source/img/logo/logo-mobile.svg" alt="Логотип магазина 'CAT ENERGY'" width="33" height="38">
+            </picture>
+            <img class="logo__image--2" src="../source/img/logo/logo-mobile2.svg" alt="Логотип магазина 'CAT ENERGY'" width="101" height="18">
           </a>
-          <a class="logo__link2--mobile" href="index.html">
-            <img class="logo__image2--mobile" src="../source/img/logo/logo-mobile2.svg" alt="Логотип магазина 'CAT ENERGY'">
-          </a>
-        </div>
-        <div class="logo--tablet">
-          <a class="logo__link--tablet" href="index.html">
-            <img class="logo__image--tablet" src="../source/img/logo/logo-tablet.svg" alt="Логотип магазина 'CAT ENERGY'">
-          </a>
-        </div>
-        <div class="logo--desktop">
-          <a class="logo__link--desktop" href="index.html">
-            <img class="logo__image--desktop" src="../source/img/logo/logo-desktop.svg" alt="Логотип магазина 'CAT ENERGY'">
-          </a>
-        </div>
 
         <nav class="main-navigation main-navigation--closed main-navigation--nojs navigation">
           <button class="navigation__burger" type="button"></button>
@@ -268,15 +259,17 @@
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer__wrapper main-footer__wrapper--catalog">
+      <div class="main-footer__wrapper">
 
         <div class="main-footer__address address">
           <div class="address__block1">
             <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
             <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
-          <div class="address__map">
-            <img class="address__map__img" src="../source/img/cat-energy-map.svg" height="362" width="320" alt="местонахождение на карте 'CAT ENERGY'">
+          <div class="address__container">
+            <iframe class="address__map--mobile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224465563646!2d30.31522021620305!3d59.96826866666998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2see!4v1661361598933!5m2!1sru!2see" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="address__map--tablet" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224465563646!2d30.31522021620305!3d59.96826866666998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2see!4v1661361598933!5m2!1sru!2see" width="768" height="400" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="address__map--desktop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224465563646!2d30.31522021620305!3d59.96826866666998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2see!4v1661361598933!5m2!1sru!2see" width="1440" height="400" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 

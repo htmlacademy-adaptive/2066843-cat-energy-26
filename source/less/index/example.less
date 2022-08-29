@@ -233,12 +233,12 @@
   .example__content::after {
     content: "";
     background-color: #eaeaea;
-    width: 768px;
+    width: 150vw;
     height: 462px;
     z-index: -1;
     position: absolute;
     top: 576px;
-    left: 0;
+    left: -50vw;
   }
 
   .example__image {
@@ -252,7 +252,7 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    min-height: 596px;
+    min-height: 628px;
     margin: 69px 110px 0 110px;
     background-color: transparent;
     padding: 0;
@@ -292,6 +292,17 @@
 
   .example__range {
     display: none;
+  }
+
+  .example__content::after {
+    content: "";
+    background-color: #eaeaea;
+    width: 150vw;
+    height: 462px;
+    z-index: -1;
+    position: absolute;
+    top: 166px;
+    left: -50vw;
   }
 
   .example__cell__label {
