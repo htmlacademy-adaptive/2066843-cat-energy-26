@@ -67,16 +67,22 @@
           <fieldset class="customer-form__group customer-form__group--secondary">
             <ul class="customer-form__list customer-form__list--secondary customer-form__radio">
               <li class="customer-form__item--secondary">
-                <input type="radio" id="lose-weight" name="type" value="Похудение"  checked>
-                <label for="lose-weight">Похудение</label>
+                <label class="customer-form__label--secondary" for="lose-weight">Похудение
+                  <input type="radio" id="lose-weight" name="type" value="Похудение"  checked>
+                  <span class="checkmark"></span>
+                </label>
               </li>
               <li class="customer-form__item--secondary">
-                <input type="radio" id="weight_gain" name="type" value="Набор массы">
-                <label for="weight-gain">Набор массы</label>
+                <label class="customer-form__label--secondary" for="weight-gain">Набор массы
+                  <input type="radio" id="weight-gain" name="type" value="Набор массы">
+                  <span class="checkmark"></span>
+                </label>
               </li>
               <li class="customer-form__item--secondary">
-                <input type="radio" id="dont-know" name="type" value="Не знаю (нужен ваш совет)">
-                <label for="dont-know">Не знаю (нужен ваш совет)</label>
+                <label class="customer-form__label--secondary" for="dont-know">Не знаю (нужен ваш совет)
+                  <input type="radio" id="dont-know" name="type" value="Не знаю (нужен ваш совет)">
+                  <span class="checkmark"></span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -88,7 +94,7 @@
                 <input class="customer__form__input customer-form__text--style1" type="text" id="customer__email" placeholder="KUKLACHEV@GMAIL.COM">
               </li>
               <li class="customer-form__item">
-                <lable class="customer-form__label customer-form__text--style1" for="customer__phone">Телефон:*</lable>
+                <label class="customer-form__label customer-form__text--style1" for="customer__phone">Телефон:*</label>
                 <input class="customer__form__input customer-form__text--style1" type="text" id="customer__phone" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
@@ -101,17 +107,29 @@
             <legend class="customer-form__title customer-form__title--fifth">Допольнительно</legend>
             <ul class="control-container customer-form__list--fifth customer-form__input">
               <li class="customer-form__item">
-                <input type="checkbox" id="sugar" name="additional" value="сахарозаменитель" checked>
-                <label for="sugar">сахарозаменитель</label></li>
+                <label class="customer-form__label--fifth" for="sugar">сахарозаменитель
+                  <input type="checkbox" id="sugar" name="additional" value="сахарозаменитель" checked>
+                  <span class="checkmark2"></span>
+                </label>
+              </li>
               <li class="customer-form__item">
-                <input type="checkbox" id="water" name="additional" value="питьевая вода">
-                <label for="water">питьевая вода</label></li>
+                <label class="customer-form__label--fifth" for="water">питьевая вода
+                  <input type="checkbox" id="water" name="additional" value="питьевая вода">
+                  <span class="checkmark2"></span>
+                </label>
+              </li>
               <li class="customer-form__item">
-                <input type="checkbox" id="milk" name="additional" value="молоко">
-                <label for="milk">молоко</label></li>
+                <label class="customer-form__label--fifth" for="milk">молоко
+                  <input type="checkbox" id="milk" name="additional" value="молоко">
+                  <span class="checkmark2"></span>
+                </label>
+              </li>
               <li class="customer-form__item">
-                <input type="checkbox" id="vitamin" name="additional" value="витамины">
-                <label for="vitamin">витамины</label></li>
+                <label class="customer-form__label--fifth" for="vitamin">витамины
+                  <input type="checkbox" id="vitamin" name="additional" value="витамины">
+                  <span class="checkmark2"></span>
+                </label>
+              </li>
             </ul>
           </fieldset>
           <button class="customer-form__button button" type="submit">Отправить заявку</button>
