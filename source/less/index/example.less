@@ -1,0 +1,320 @@
+.example {
+  margin-top: 29px;
+  background-color: hsl(0, 0%, 92%);
+  padding: 25px 20px 40px 20px;
+}
+
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.example__cell {
+  width: 124px;
+  height: 56px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  position: relative;
+}
+
+.example__cell__text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  margin-top: 14px;
+}
+
+.example__cell__label {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  color: #444444;
+  width: 59px;
+  text-align: center;
+  padding: 0 9px;
+  position: absolute;
+  z-index: 1;
+  top: 46px;
+  background-color: hsl(0, 0%, 92%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.example__title2 {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: auto;
+  margin-top: 34px;
+}
+
+.example__content {
+  margin-top: 40px;
+}
+
+.example__image {
+  height: 232px;
+  width: 280px;
+}
+
+.example__range {
+  display: flex;
+  flex-direction: row;
+  width: 210px;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+.range__text {
+  margin: 0;
+  width: 49px;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.range__scale {
+  width: 85px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.range__bar {
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: hsl(97, 53%, 47%);
+  top: 3px;
+  left: 6px;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    min-height: 1037px;
+    margin-top: 43px;
+    background-color: transparent;
+    padding: 0 30px;
+  }
+
+  .example__wrapper {
+    position: relative;
+  }
+
+  .example__title {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+  }
+
+  .example__text {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 63px;
+  }
+
+  .example__block {
+    margin-top: 54px;
+    width: 366px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .example__cell {
+    width: 162px;
+    height: 72px;
+    box-sizing: border-box;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .example__cell__text {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    margin-top: 14px;
+  }
+
+  .example__cell__label {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    color: #444444;
+    width: max-content;
+    text-align: center;
+    padding: 0 9px;
+    position: absolute;
+    z-index: 1;
+    top: 64px;
+    background-color: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .example__title2 {
+    margin: 0;
+    text-align: right;
+    width: 182px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: 0;
+    top: 240px;
+  }
+
+  .example__range {
+    display: none;
+  }
+
+  .example__content::after {
+    content: "";
+    background-color: #eaeaea;
+    width: 150vw;
+    height: 462px;
+    z-index: -1;
+    position: absolute;
+    top: 576px;
+    left: -50vw;
+  }
+
+  .example__image {
+    width: 560px;
+    height: 512px;
+    margin-left: 104px;
+    margin-right: 104px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    min-height: 628px;
+    margin: 69px 110px 0 110px;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .example__wrapper {
+    position: relative;
+    width: 436px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__text {
+    margin: 0;
+    margin-top: 146px;
+  }
+
+  .example__title {
+    line-height: normal;
+  }
+
+  .example__block {
+    margin-top: 69px;
+    width: 366px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .example__title2 {
+    margin: 0;
+    text-align: left;
+    width: auto;
+    position: static;
+    margin-top: 55px;
+  }
+
+  .example__range {
+    display: none;
+  }
+
+  .example__content::after {
+    content: "";
+    background-color: #eaeaea;
+    width: 150vw;
+    height: 462px;
+    z-index: -1;
+    position: absolute;
+    top: 166px;
+    left: -50vw;
+  }
+
+  .example__cell__label {
+    background-color: #eaeaea;
+  }
+
+  .example__image {
+    width: 560px;
+    height: 512px;
+    position: absolute;
+    top: 0;
+    left: 660px;
+    margin: 0;
+  }
+}
