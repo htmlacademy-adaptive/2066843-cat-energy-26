@@ -1,0 +1,129 @@
+.present__container {
+  width: 280px;
+  height: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background: rgba(104, 183, 56, 0.85);
+  overflow: hidden;
+}
+
+.present__container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.2;
+  background-image: url("../img/present-cover.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.present__text {
+  width: 161px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  margin-top: 186px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .present__container {
+    width: 707px;
+    height: 200px;
+    margin: 69px auto 0 auto;
+    position: relative;
+    background: rgba(104, 183, 56, 0.85);
+    overflow: hidden;
+  }
+
+  .present__container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url("../img/present-cover.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+
+  .present__text {
+    width: 161px;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    margin-top: 186px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .present__container {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+    background: rgba(104, 183, 56, 0.85);
+    overflow: hidden;
+    position: absolute;
+    top: 116px;
+    right: -324px;
+  }
+
+  .present__container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url("../img/present-cover.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+
+  .present__text {
+    width: 161px;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    margin-top: 186px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+  }
+}

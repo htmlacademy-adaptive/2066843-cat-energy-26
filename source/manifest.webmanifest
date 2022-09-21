@@ -1,0 +1,10 @@
+{
+  "icons": [
+    { "src": "img/fav/16.png", "type": "image/png", "sizes": "16x16" },
+    { "src": "img/fav/32.png", "type": "image/png", "sizes": "32x32" },
+    { "src": "../source/img/fav/favicon-16x16", "type": "image/png", "sizes": "16x16" },
+    { "src": "../source/img/fav/favicon-32x32", "type": "image/png", "sizes": "32x32" },
+    { "src": "../source/img/fav/favicon-96x96", "type": "image/png", "sizes": "96x96" },
+    { "src": "img/fav/152.png", "type": "image/png", "sizes": "152x152" }
+  ]
+}
